@@ -2,19 +2,27 @@
 
 # dependencies
 frontend/node_modules
+frontend2/node_modules
 
-# testing
+# build
 frontend/build
+frontend2/build
 
 # testing
 frontend/coverage
+frontend2/coverage
 
 # misc
 frontend/.DS_Store
+frontend2/.DS_Store
 frontend/.env.local
+frontend2/.env.local
 frontend/.env.development.local
+frontend2/.env.development.local
 frontend/.env.test.local
+frontend2/.env.test.local
 frontend/.env.production.local
+frontend2/.env.production.local
 
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
