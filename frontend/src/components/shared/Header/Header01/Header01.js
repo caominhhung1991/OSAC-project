@@ -22,7 +22,6 @@ export class Header01 extends Component {
 
   clickMenuIconHandle = () => {
     let newValue = !this.state.isClicked;
-    console.log("hung")
     this.setState({
       isClicked: newValue
     })
@@ -37,23 +36,29 @@ export class Header01 extends Component {
   render() {
     let flagVNClass = this.state.isChoosedFlagVN === true ? "Header__Flag__Choosed" : "";
     let flagENClass = this.state.isChoosedFlagVN === false ? "Header__Flag__Choosed" : "";
-    
-    let trangChuClass = this.props.page === "trangChu" ?  "Header__Nav__Item Active" : "Header__Nav__Item";
-    let gioiThieuClass = this.props.page === "gioiThieu" ?  "Header__Nav__Item Active" : "Header__Nav__Item";
-    let dichVuClass = this.props.page === "dichVu" ?  "Header__Nav__Item Active" : "Header__Nav__Item";
-    let tinTucClass = this.props.page === "tinTuc" ?  "Header__Nav__Item Active" : "Header__Nav__Item";
-    let tuyenDungClass = this.props.page === "tuyenDung" ?  "Header__Nav__Item Active" : "Header__Nav__Item";
-    let lienHeClass = this.props.page === "lienHe" ?  "Header__Nav__Item Active" : "Header__Nav__Item";
+
+    let trangChuClass = this.props.page === "trangChu" ? "Header__Nav__Item Active" : "Header__Nav__Item";
+    let gioiThieuClass = this.props.page === "gioiThieu" ? "Header__Nav__Item Active" : "Header__Nav__Item";
+    let dichVuClass = this.props.page === "dichVu" ? "Header__Nav__Item Active" : "Header__Nav__Item";
+    let tinTucClass = this.props.page === "tinTuc" ? "Header__Nav__Item Active" : "Header__Nav__Item";
+    let tuyenDungClass = this.props.page === "tuyenDung" ? "Header__Nav__Item Active" : "Header__Nav__Item";
+    let lienHeClass = this.props.page === "lienHe" ? "Header__Nav__Item Active" : "Header__Nav__Item";
 
 
     return (
       <div className="Header">
         <div className="Header__Contact">
-          <i className="fa fa-facebook-official" /> <span className="Header__Contact__Content">osac.vn</span> 
+          <a className="Header__Contact__Link" href="http://osac.vn">
+            <i className="fa fa-facebook-official" /> <span className="Header__Contact__Content">www.osac.vn</span>
+          </a>
           <span>|</span>
-          <i className="fa fa-phone" /> <span className="Header__Contact__Content">079.881.5991</span> 
+          <a className="Header__Contact__Link" href="tel:0363575468">
+            <i className="fa fa-phone" /> <span className="Header__Contact__Content">(+84) 363.575.468</span>
+          </a>
           <span>|</span>
-          <i className="fa fa-envelope" /> <span className="Header__Contact__Content">hotro@osac.vn</span>
+          <a className="Header__Contact__Link" href="mailto:hoangviet@osac.vn">
+            <i className="fa fa-envelope" /> <span className="Header__Contact__Content">hoangviet@osac.vn</span>
+          </a>
         </div>
         <div className="Header__Navigation">
           <Link to={"/"}><img className="Header__Logo" src={OSAC_Logo} alt="OSAC LOGO" /></Link>

@@ -1,3 +1,5 @@
+@import './static//style/global.scss';
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +8,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  /* overflow-x: hidden; */
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
 }
 
 code {
@@ -14,28 +25,42 @@ code {
     monospace;
 }
 
+hr {
+  margin: 0 !important;
+  border: 0;
+  border-top: 1px solid #e8e9eb;
+}
+
+.OsacColor {
+  color: $osac-color;
+}
 /* // Small devices (landscape phones, 576px and up) - iphone ngang
 @media (min-width: 576px) {
-  .Header {
-    background: yellow;
-  }
+  
 }
 
 // Medium devices (tablets, 768px and up) - ipad doc
 @media (min-width: 768px) { 
-  .Header {
-    background: blue;
-  }
+ 
 }
 
 // Large devices (desktops, 992px and up) - ipad ngang
 @media (min-width: 992px) { 
-  .Header {
-    background: green;
-  }
+ 
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   
 } */
+
+
+/* ----- AOS css animation -----  */
+/* 
+data-aos="fade-down"
+zoom-in, zoom-out, flip-up, flip-down
+data-aos-easing="linear", ease-out-cubic, ease-in-out-sine, ease-in-out-back
+data-aos-anchor-placement="center-bottom"
+ data-aos-offset="300"
+data-aos-duration="1500"
+ */

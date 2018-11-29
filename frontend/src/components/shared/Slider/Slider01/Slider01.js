@@ -1,14 +1,10 @@
 import React, { Component } from 'react'
 import './Slider01.scss'
-import Swiper from 'swiper';
-import axios from 'axios';
-
+import Swiper from 'swiper'
 // import PropTypes from 'prop-types'
-
-const API_GET_IMAGE = "https://jsonplaceholder.typicode.com/photos";
-const SWIPERS = [];
-let DATA = [];
-let count = 3;
+// import background_slider from '../../../../static/img/background_slider.jpeg';
+// import catering_background_1 from '../../../../static/img/catering_background_1.jpg';
+import banner1 from './../../../../static/img/banner1.jpg'
 let mySwiper;
 
 export class Slider01 extends Component {
@@ -16,81 +12,91 @@ export class Slider01 extends Component {
     swipers: []
   }
 
-  addSlideHandle = () => {
-    axios.get(API_GET_IMAGE).then(res => {
-      DATA = res.data;
-
-      let slide = document.createElement("div");
-      slide.classList.add("swiper-slide");
-
-      let image = document.createElement("img");
-      image.src = DATA[count].url;
-      image.alt = DATA[count].url;
-
-      slide.appendChild(image);
-
-      mySwiper.appendSlide(slide)
-    })
-
-    count++;
-  }
-
   render() {
     return (
-      <div key="2" className="swiper-container">
+      <div className="swiper-container">
+        <div
+          className="parallax-bg"
+          style={{ backgroundImage: `url(${banner1})` }}
+          data-swiper-parallax="-23%"
+        ></div>
         <div className="swiper-wrapper">
-          {this.state.swipers}
+          <div className="swiper-slide PaddingTam">
+            <div className="title" data-swiper-parallax="-700">OSAC SERVICES</div>
+            <div className="subtitle" data-swiper-parallax="-500">Bếp ăn công nghiệp</div>
+            <div className="text" data-swiper-parallax="-300">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+            </div>
+          </div>
+          <div className="swiper-slide PaddingTam">
+            <div className="title" data-swiper-parallax="-700">OSAC SERVICES</div>
+            <div className="subtitle" data-swiper-parallax="-500">Cung cấp rau củ quả</div>
+            <div className="text" data-swiper-parallax="-300">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+            </div>
+          </div>
+          <div className="swiper-slide PaddingTam">
+            <div className="title" data-swiper-parallax="-700">OSAC SERVICES</div>
+            <div className="subtitle" data-swiper-parallax="-500">Thiết kế và tư vấn bếp ăn công nghiệp</div>
+            <div className="text" data-swiper-parallax="-300">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+            </div>
+          </div>
         </div>
-        <div className="swiper-pagination"></div>
-
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
-        <div className="swiper-scrollbar"></div>
+        <div className="swiper-pagination swiper-pagination-white"></div>
+        <div className="swiper-button-prev swiper-button-white"></div>
+        <div className="swiper-button-next swiper-button-white"></div>
       </div>
     )
   }
+  // <div key={res.data[i].url} className="swiper-slide PaddingTam">
+  //   <img className="Slider__Image" src={res.data[i].url} alt="swiperImgURL" />
+  // </div>
 
   componentDidMount = () => {
-    axios.get(API_GET_IMAGE).then(res => {
-      DATA = res.data;
-      for (let i = 1; i <= 1; i++) {
-        SWIPERS.push(
-          <div key={res.data[i].url} className="swiper-slide">
-            <img src={res.data[i].url} alt="swiperImgURL" />
-          </div>
-        )
-      }
 
-      this.setState({
-        swipers: SWIPERS
-      })
+    mySwiper = new Swiper('.swiper-container', {
+      speed: 600,
+      parallax: true,
 
-      mySwiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
+      spaceBetween: 30,
+      // centeredSlides: true,
+      // autoplay: {
+      //   delay: 3500,
+      //   disableOnInteraction: false,
+      // },
 
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
+      // Optional parameters
+      // direction: 'horizontal',
+      loop: true,
+      // loop: false,
 
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
 
-        // And if we need scrollbar
-        // scrollbar: {
-        //   el: '.swiper-scrollbar',
-        // },
-      })
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
-      mySwiper.on('slideChange', function () {
-        console.log('slide changed');
-      });
+      // mouse wheel
+      // mousewheel: true,
+
+      // And if we need scrollbar
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      // },
+
     })
+
+    mySwiper.on('slideChange', function () {
+      console.log('slide changed');
+    });
 
   }
 }

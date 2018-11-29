@@ -4,22 +4,29 @@ $header-contact-color: #b59153;
 $header-contact-height: 35px;
 
 .Header {
-  background-color: rgb(252, 247, 221);
+  position: -webkit-sticky;
+  position: sticky;
+ 
+  top: 0px;
+  z-index: 100;
   &__Contact {
     padding: 10px 15px;
     text-align: right;
     font-size: 16px !important;
     background-color: $header-contact-color;
     color: white;
-    i {
-      cursor: pointer;
-      transition: color 0.1s ease-in;
+    &__Link {
+      color: white;
       &:hover {
-        color: lightgray;
+        color: rgb(241, 241, 241);
+        text-decoration: none;
       }
     }
+    i {
+      cursor: pointer;
+      
+    }
     i, span {
-      // margin-right: 10px;
       padding: 0 5px;
       
     }
@@ -35,6 +42,7 @@ $header-contact-height: 35px;
   &__Navigation {
     position: relative;
     padding: 6px 13px;
+    background-color: rgba(250, 244, 193, 0.85);
   }
 
   &__Logo {
@@ -43,8 +51,8 @@ $header-contact-height: 35px;
 
   &__Flag {
     position: absolute;
-    top: 23px;
-    right: 75px;
+    top: 17px;
+    right: 68px;
 
     &__Item {
       cursor: pointer;
@@ -65,9 +73,11 @@ $header-contact-height: 35px;
   left: 100px;
   &__Item {
     display: inline-block;
-    padding: 10px 10px 15px 15px;
+    padding: 10px 10px 11px 15px;
     font-weight: 1200px;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #333;
     cursor: pointer;
     &:hover {
       // background: green;
