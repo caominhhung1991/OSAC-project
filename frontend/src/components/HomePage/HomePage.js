@@ -9,14 +9,14 @@ import { ItemServices } from '../ItemServices/ItemServices';
 import { Story } from '../Story/Story';
 import Reason from '../Reason/Reason';
 
-// import { Partners } from '../Partners/Partners';
-// import { News } from '../News/News';
+import { Partners } from '../Partners/Partners';
+import { News } from '../News/News';
 import { Footer } from '../Footer/Footer';
 import Introduce01 from '../shared/Introduce/Introduce01/Introduce01';
 // import Sticky2 from '../shared/scrollmagic/sticky2/sticky2';
 // import { Slider01 } from '../shared/Slider/Slider01/Slider01';
 import { Slider02 } from '../shared/Slider/Slider02/Slider02';
-import { MenuIntroduce } from '../Menu/MenuIntroduce/MenuIntroduce';
+// import { MenuIntroduce } from '../Menu/MenuIntroduce/MenuIntroduce';
 
 export class HomePage extends Component {
   render() {
@@ -32,11 +32,12 @@ export class HomePage extends Component {
         <ItemServices />
         {/* <Sticky2 /> */}
         <Reason />
-        {/* <Partners /> */}
 
-        {/* <News /> */}
+        <News />
 
-        <MenuIntroduce />
+        {/* <MenuIntroduce /> */}
+        <Partners />
+
         <Footer />
       </Aux>
     )

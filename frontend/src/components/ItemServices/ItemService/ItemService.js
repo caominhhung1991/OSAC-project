@@ -3,10 +3,13 @@ import './ItemService.scss'
 
 import PropTypes from 'prop-types'
 // import canTinTruongHoc from './../static/img/can_tin_truong_hoc.jpg';
-import canTinTruongHoc from './../../../static/img/can_tin_truong_hoc.jpg';
+// import canTinTruongHoc from './../../../static/img/can_tin_truong_hoc.jpg';
 
 const imageMap = {
-  "can_tin": canTinTruongHoc
+  "can_tin": 'http://inoxhimalaya.com.vn/wp-content/uploads/2017/06/Bep-truong-hoc.jpg',
+  "bep_an_cong_nghiep": "https://monclas.com/wp-content/uploads/2015/09/business-lunch.jpg",
+  "to_chuc_tiec": "https://caisag.ts.it/wp-content/uploads/2017/10/02-pranzo-sociale.jpg",
+  "dich_vu_khac": "https://primecatering.by/wp-content/uploads/2018/01/catering.jpg",
 }
 
 const propTypes = {

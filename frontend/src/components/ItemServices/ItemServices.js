@@ -11,13 +11,12 @@ export class ItemServices extends Component {
       <Aux>
         <Title01 title={"Sản Phẩm - Dịch vụ"} />
         <div className="ItemServices">
-          <ItemService image={"can_tin"} title={"bếp ăn công nghiệp"} />
+          <ItemService image={"bep_an_cong_nghiep"} title={"bếp ăn công nghiệp"} />
           <ItemService image={"can_tin"} title={"bếp ăn trường học"} />
-          <ItemService image={"can_tin"} title={"tổ chức tiệc"} />
-          <ItemService image={"can_tin"} title={"dịch vụ khác"} />
+          <ItemService image={"to_chuc_tiec"} title={"tổ chức tiệc"} />
+          <ItemService image={"dich_vu_khac"} title={"dịch vụ khác"} />
         </div>
       </Aux>
-
     )
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Story.scss'
-import cateringBG from './../../static/img/catering_background_1.jpg'
+// import cateringBG from './../../static/img/catering_background_1.jpg'
+import banner_web from './../../static/img/banner-web.jpg'
 // import PropTypes from 'prop-types'
 import { Title01 } from '../shared/Title/Title01/Title01';
 import Button01 from '../shared/Button/Button01/Button01';
@@ -8,7 +9,7 @@ import Button01 from '../shared/Button/Button01/Button01';
 export class Story extends Component {
   render() {
     return (
-      <div className="Story">
+      <div className="Story mt-4">
         <Title01 title={"Câu chuyện của chúng tôi"} dataAOS={"fade-up"}/>
         <div className="Story__Content">
           <div
@@ -16,7 +17,9 @@ export class Story extends Component {
             data-aos="fade-up-left"
             data-aos-offset="100"
             data-aos-anchor-placement="top-bottom"
-            style={{ backgroundImage: `url(${cateringBG})` }}>
+            style={{ backgroundImage: `url(${banner_web})` }}
+            // style={{ backgroundImage: `url('https://s3-us-west-2.amazonaws.com/chotroi/osac/banner-web1.jpg')` }}
+          >
           </div>
           <div 
             className="Story__Text"
