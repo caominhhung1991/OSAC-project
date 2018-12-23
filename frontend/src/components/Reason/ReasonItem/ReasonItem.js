@@ -12,10 +12,10 @@ const propTypes = {
 
 const imageMap = {
   "chat_luong_tieu_chuan": reasonImage,
-  "nguon_thuc_pham_an_toan": 'https://thecaterers.vn/wp-content/uploads/2016/07/Certified-Resources_220x220.jpg',
+  "nguon_thuc_pham_an_toan": 'https://s3-us-west-2.amazonaws.com/chotroi/osac/reasons/tu-nhien-2-ec63b.jpg',
   "dich_vu_linh_hoat": 'https://thecaterers.vn/wp-content/uploads/2016/07/Flexibility_220x220.jpg',
-  "kinh_nghiem_va_uy_tinh": 'https://thecaterers.vn/wp-content/uploads/2016/07/Partnership_220x220.jpg',
-  "khach_hang_la_trong_tam": 'https://thecaterers.vn/wp-content/uploads/2016/07/Innovating_220x220.jpg',
+  "kinh_nghiem_va_uy_tinh": 'https://s3-us-west-2.amazonaws.com/chotroi/osac/reasons/chatluongvauytin.jpg',
+  "khach_hang_la_trong_tam": 'https://s3-us-west-2.amazonaws.com/chotroi/osac/reasons/khachhanglatrongtam.jpg',
   "luon_luon_cai_tien": 'https://thecaterers.vn/wp-content/uploads/2016/07/Prestige-Achievement_220x220.jpg',
 }
 
@@ -23,7 +23,6 @@ const imageMap = {
 
 export class ReasonItem extends Component {
   render() {
-    console.log(this.props.image)
     return (
       <div 
         className="ReasonItem"

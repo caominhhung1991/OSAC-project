@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import './Partners.scss'
 import { Title01 } from '../shared/Title/Title01/Title01';
 import Swiper from 'swiper';
-import flag_english from '../../static/img/flag_english.png';
-import flag_vietnam from '../../static/img/flag_vietnam.png';
 
 export class Partners extends Component {
   render() {
@@ -13,48 +11,68 @@ export class Partners extends Component {
         <div className="swiper-container2">
           <div className="swiper-wrapper SwiperWrapper">
             <div className="swiper-slide">
-              <img src={flag_english} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/achaucatering.gif'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_vietnam} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/ajinomoto.jpg'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_english} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/bahuan.jpg'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_vietnam} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/cocacola.png'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_english} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/cp.png'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_vietnam} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/metro.png'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_english} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/pepsi.png'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_vietnam} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/achaucatering.gif'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_english} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/ajinomoto.jpg'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_vietnam} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/bahuan.jpg'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_english} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/cocacola.png'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_vietnam} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/cp.png'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_english} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/metro.png'} alt="partner" />
             </div>
             <div className="swiper-slide">
-              <img src={flag_vietnam} alt="partner" />
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/pepsi.png'} alt="partner" />
             </div>
-            
+            <div className="swiper-slide">
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/achaucatering.gif'} alt="partner" />
+            </div>
+            <div className="swiper-slide">
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/ajinomoto.jpg'} alt="partner" />
+            </div>
+            <div className="swiper-slide">
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/bahuan.jpg'} alt="partner" />
+            </div>
+            <div className="swiper-slide">
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/cocacola.png'} alt="partner" />
+            </div>
+            <div className="swiper-slide">
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/cp.png'} alt="partner" />
+            </div>
+            <div className="swiper-slide">
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/metro.png'} alt="partner" />
+            </div>
+            <div className="swiper-slide">
+              <img src={'https://s3-us-west-2.amazonaws.com/chotroi/osac/parners/pepsi.png'} alt="partner" />
+            </div>
           </div>
           <div className="swiper-pagination"></div>
         </div>

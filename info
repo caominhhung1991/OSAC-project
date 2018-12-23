@@ -49,4 +49,26 @@ hungthinh@osac.vn
 0964.345.024
 
 --- script --- 
+#config nginx.conf
+cd /etc/nginx/sites-enabled
+sudo vi /etc/nginx/sites-enabled/default
+sudo vi /etc/nginx/nginx.conf
 
+#place contain root html
+cd /usr/share/nginx
+cd /usr/share/nginx/OSAC-project/frontend/build
+/var/www/html
+
+
+// https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-debian-9
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh -o install_nvm.sh
+bash install_nvm.sh
+source ~/.profile
+nvm install 10.9.0
+
+sudo apt install git 
+
+
+todoList: 
+-- lý do chọn osac --
+tìm 6 hình thay thế vì trùng với hình của thecaterers.vn 

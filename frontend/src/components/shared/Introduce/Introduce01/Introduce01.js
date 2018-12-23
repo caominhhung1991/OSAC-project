@@ -16,7 +16,7 @@ const Introduce01 = () => (
           from={{ yPercent: -50, }}
           to={{ yPercent: 0, }}
         >
-          <img src={"https://s3-us-west-2.amazonaws.com/chotroi/osac/nature.jpeg"} alt="osac service" />
+          <img src={"https://s3-us-west-2.amazonaws.com/chotroi/osac/background_introduce.jpg"} alt="osac service" />
         </Tween>
       </Timeline>
     </Scene>
