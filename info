@@ -1,5 +1,4 @@
-hotro@osac.vn
-PhamHoangViet@123
+
 
 pham Hoang Viet
 84-798815991
@@ -56,6 +55,7 @@ sudo vi /etc/nginx/nginx.conf
 
 #place contain root html
 cd /usr/share/nginx
+cd /usr/share/nginx/OSAC-project
 cd /usr/share/nginx/OSAC-project/frontend/build
 /var/www/html
 
